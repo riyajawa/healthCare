@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'bmi.dart';
+
 
 void main() {
   runApp(Dashboard());
@@ -77,9 +77,12 @@ class Dashboard extends StatelessWidget {
                 FlatButton(
                   minWidth: 200.0,
                   height: 50.0,
-                  onPressed: () {},
+                  onPressed: () {
+
+                    Navigator.pushNamed(context, '/med');
+                  },
                   child: Text(
-                    'It works as first kit to you',
+                    'Medicine',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),
