@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:health_care/Signin.dart';
 import 'package:health_care/bmi.dart';
 import 'package:health_care/med.dart';
+import 'package:health_care/ok.dart';
 import 'package:health_care/register.dart';
 import 'welcomepage.dart';
 import 'package:health_care/Dashboard.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/dashboard':(context)=>Dashboard(),
         '/med':(context)=>Med(),
         '/bmi':(context)=>Bmi(),
+
 
 
       },

@@ -35,8 +35,11 @@ class Dashboard extends StatelessWidget {
                       alignment: Alignment.topRight,
                       child: CircleAvatar(
                         maxRadius: 35.0,
+
                         backgroundImage: NetworkImage(
-                            'https://www.filmibeat.com/ph-big/2019/07/ismart-shankar_156195627930.jpg'),
+                            'https://img.favpng.com/2/15/4/doctor-symbol-png-favpng-H2aJfXLCvZeVrj5Y05G5aD47v.jpg'
+
+                            ),
                       ),
                     ),
                     Align(
@@ -82,7 +85,7 @@ class Dashboard extends StatelessWidget {
                     Navigator.pushNamed(context, '/med');
                   },
                   child: Text(
-                    'Medicine',
+                    '    Recommended Medicines',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),
@@ -103,9 +106,11 @@ class Dashboard extends StatelessWidget {
                 FlatButton(
                   minWidth: 200.0,
                   height: 50.0,
-                  onPressed: () {},
+                  onPressed: () {
+
+                  },
                   child: Text(
-                    'It works as first kit to you',
+                    '    Search for Medicines',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),
@@ -126,9 +131,11 @@ class Dashboard extends StatelessWidget {
                 FlatButton(
                   minWidth: 200.0,
                   height: 50.0,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/bmi');
+                  },
                   child: Text(
-                    'It works as first kit to you',
+                    'Calculate BMI',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),
@@ -154,7 +161,7 @@ class Dashboard extends StatelessWidget {
                     Navigator.pushNamed(context, '/bmi');
                   },
                   child: Text(
-                    'Calculate BMI',
+                    'Call a Doctor',
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 20.0),
                   ),

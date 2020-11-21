@@ -27,7 +27,8 @@ class _CareState extends State<Care>{
               speed: const Duration(seconds: 1),
               text:['Welcome'],
               textStyle: TextStyle(
-                  fontFamily: 'Merriweather',
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.bold,
                   fontSize: 60.0,
                   color: Color(0xFF1B3052),
                   letterSpacing: 2.0),
