@@ -54,6 +54,8 @@ flutter:
      - images/head.jpeg
      - images/background.png
      - images/medicine.png
+     - images/doctor.png
+     - images/last.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

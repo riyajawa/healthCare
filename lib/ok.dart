@@ -57,7 +57,10 @@ class Ok extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.search),
                 title: Text("Search",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: ()
+                {
+                  Navigator.pushNamed(context, '/sea');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.medical_services),
@@ -77,13 +80,12 @@ class Ok extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.phone),
                 title: Text("Call Doctor",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: ()
+                {
+                  Navigator.pushNamed(context, '/doc');
+                },
               ),
-              ListTile(
-                leading: Icon(Icons.logout),
-                title: Text("Logout",style: TextStyle(fontSize: 18),),
-                onTap: null,
-              )
+
 
             ],
           ),

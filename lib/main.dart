@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:health_care/Search.dart';
 import 'package:health_care/Signin.dart';
 import 'package:health_care/bmi.dart';
+import 'package:health_care/calldoc.dart';
 import 'package:health_care/med.dart';
 import 'package:health_care/ok.dart';
 import 'package:health_care/ok2.dart';
@@ -46,6 +48,8 @@ class MyApp extends StatelessWidget {
         '/con' :(context)=>Con(),
         '/baby' :(context)=>Baby(),
         '/tooth' :(context)=>Tooth(),
+        '/doc' :(context)=>Doctor(),
+        '/sea' :(context)=>Sear(),
 
 
 

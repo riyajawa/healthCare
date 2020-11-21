@@ -26,7 +26,7 @@ class _SigninState extends State<Signin> {
               "Login",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Merriweather',
+                  fontFamily: 'Roboto',
                   fontSize: 60.0,
                   color: Color(0xFF1B3052),
                   letterSpacing: 2.0,

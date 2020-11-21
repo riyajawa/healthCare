@@ -107,6 +107,7 @@ class Dashboard extends StatelessWidget {
                   minWidth: 200.0,
                   height: 50.0,
                   onPressed: () {
+                    Navigator.pushNamed(context, '/sea');
 
                   },
                   child: Text(
@@ -158,7 +159,7 @@ class Dashboard extends StatelessWidget {
                   height: 50.0,
                   onPressed: () {
 
-                    Navigator.pushNamed(context, '/bmi');
+                    Navigator.pushNamed(context, '/doc');
                   },
                   child: Text(
                     'Call a Doctor',
