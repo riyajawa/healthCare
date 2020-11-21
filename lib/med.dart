@@ -51,7 +51,9 @@ class Med extends StatelessWidget {
                       ListTile(
                         leading: Icon(Icons.home),
                         title: Text("Home",style: TextStyle(fontSize: 18),),
-                        onTap: null,
+                        onTap: () {
+                          Navigator.pushNamed(context, '/dashboard');
+                        },
                       ),
                       ListTile(
                         leading: Icon(Icons.search),
@@ -61,12 +63,17 @@ class Med extends StatelessWidget {
                       ListTile(
                         leading: Icon(Icons.medical_services),
                         title: Text("Medicines",style: TextStyle(fontSize: 18),),
-                        onTap: null,
+                        onTap: () {
+                Navigator.pushNamed(context, '/med');
+                },
                       ),
                       ListTile(
                         leading: Icon(Icons.mode_edit),
                         title: Text("BMI",style: TextStyle(fontSize: 18),),
-                        onTap: null,
+                        onTap: ()
+                        {
+                          Navigator.pushNamed(context, '/bmi');
+                        },
                       ),
                       ListTile(
                         leading: Icon(Icons.phone),
@@ -131,10 +138,11 @@ class Med extends StatelessWidget {
 
 
 
+
                 child:RaisedButton.icon(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/oky');
-                  },
+                    Navigator.pushNamed(context, '/ok');
+                                    },
 icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
 
@@ -164,6 +172,7 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 width: 320.0,
                 child: RaisedButton.icon(
                   onPressed: () {
+                    Navigator.pushNamed(context, '/okk');
 
                   },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
@@ -189,7 +198,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/okkk');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(
@@ -212,7 +223,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/inj');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(
@@ -236,7 +249,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/bp');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
 
@@ -260,7 +275,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/alr');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(
@@ -283,7 +300,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/con');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(
@@ -306,7 +325,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/baby');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(
@@ -329,7 +350,9 @@ icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
                 height: 100.0,
                 width: 320.0,
                 child: RaisedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/tooth');
+                  },
                   icon: Image.asset('images/medicine.png',height: 30.0,width: 30.0,),
 
                   label: Text(

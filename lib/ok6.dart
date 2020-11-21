@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Alr());
 }
-class MyApp extends StatelessWidget {
+class Alr extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,7 +48,9 @@ class MyApp extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Home",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: () {
+                  Navigator.pushNamed(context, '/dashboard');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.search),

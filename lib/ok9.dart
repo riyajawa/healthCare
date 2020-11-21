@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Tooth());
 }
-class MyApp extends StatelessWidget {
+class Tooth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

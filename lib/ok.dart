@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Ok());
 }
 
 
-class MyApp extends StatelessWidget {
+class Ok extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -50,7 +50,9 @@ class MyApp extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Home",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: () {
+                  Navigator.pushNamed(context, '/dashboard');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.search),
@@ -60,12 +62,17 @@ class MyApp extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.medical_services),
                 title: Text("Medicines",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: () {
+                  Navigator.pushNamed(context, '/med');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.mode_edit),
                 title: Text("BMI",style: TextStyle(fontSize: 18),),
-                onTap: null,
+                onTap: ()
+                {
+                  Navigator.pushNamed(context, '/bmi');
+                },
               ),
               ListTile(
                 leading: Icon(Icons.phone),
